@@ -67,10 +67,11 @@
 </ion-content>
 
 <ion-footer>
-  <ion-button color="primary" shape="block" (click)="registerNewUser()">
-    {{ 'Login.Button.Signin' | translate }}
-  </ion-button>
   <ion-button color="secondary" shape="block" (click)="passwordRecovery()">
     {{ 'Login.Button.ForgotPassword' | translate }}
+  </ion-button>
+
+  <ion-button color="secondary" shape="block" (click)="navigateMap()">
+    Ruta a DUOC
   </ion-button>
 </ion-footer>
