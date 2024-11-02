@@ -1,11 +1,12 @@
 export interface DinosaurData {
-  name: string;
-  length: string;
-  height: string;
-  weight: string;
-  diet: string;
-  period: string;
-  extinction: string;
-  found: string;
-  image: string;
+  bloqueInicio: number;
+  bloqueTermino: number;
+  dia: string;
+  horaFin: string;
+  horaInicio: string;
+  idAsignatura: string;
+  nombreAsignatura: string;
+  nombreProfesor: string;
+  seccion: string;
+  sede: string;
 }
