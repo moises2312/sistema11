@@ -16,7 +16,7 @@
     "Login.Placeholder.Password": "Ingresa aquí tu contraseña",
     "Login.Button.Login": "Ingresar",
     "Login.Button.Signin": "Registrarse",
-    "Login.Button.ForgotPassword": "Olvidé mi contraseña",
+    "Login.Button.ForgotPassword": "Recuperar contraseña",
     "Login.Button.DarkMode": "Oscuro",
 
     "WelcomePage.Title.Wellcome": "¡Bienvenido al Sistema de asistencia DUOC!",
