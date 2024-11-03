@@ -42,14 +42,17 @@
 /* Imagen de fondo en modo portrait */
 @media (orientation: portrait) {
   .background-image {
-    background-image: url('../../../assets/images/trex-v.jpg'); /* Cambia esta URL a la imagen en portrait */
+    background-image: url('../../../assets/images/pao.jpg');
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
   }
 }
 
 /* Imagen de fondo en modo landscape */
 @media (orientation: landscape) {
   .background-image {
-    background-image: url('../../../assets/images/trex-h.jpg'); /* Cambia esta URL a la imagen en landscape */
+    background-image: url('../../../assets/images/pao.jpg'); /* Cambia esta URL a la imagen en landscape */
   }
 }
 
