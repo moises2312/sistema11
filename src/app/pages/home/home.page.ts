@@ -34,7 +34,7 @@ export class HomePage {
   constructor(private auth: AuthService, private scanner: ScannerService) { }
 
   ionViewWillEnter() {
-    this.changeComponent('welcome');
+    this.changeComponent('qrwebscanner');
   }
 
   async headerClick(button: string) {
