@@ -1,0 +1,22 @@
+.card-background {
+  --background: url('/assets/images/background-image.jpg') no-repeat center center / cover;
+  color: black;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
