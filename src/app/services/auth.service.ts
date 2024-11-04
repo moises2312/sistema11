@@ -116,6 +116,19 @@ export class AuthService {
     }
   }
 
+  
+
+  
+
+
+
+  rowToUser(arg0: any): User | PromiseLike<User | undefined> | undefined {
+    throw new Error('Method not implemented.');
+  }
+  
+
+
+
   // async readQrFromStorage(): Promise<string | null> {
   //   try {
   //     const qrData = await this.storage.get(this.storageQrCodeKey) as string | null;

@@ -11,6 +11,9 @@ import { convertDateToString, convertStringToDate } from '../tools/date-function
   providedIn: 'root'
 })
 export class DatabaseService {
+  query(query: string, arg1: string[]) {
+    throw new Error('Method not implemented.');
+  }
 
   testUser1 = User.getNewUsuario(
     'atorres', 

@@ -1,13 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>pregunta</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <ion-card *ngIf="user">
+    <ion-card-header>
+      <ion-toolbar>
+        <ion-title>Asistencia de Duoc</ion-title>
+      </ion-toolbar>
+    </ion-card-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pregunta</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-card-content>
+      <ion-card-subtitle>Usuario: {{ user?.firstName }} {{ user?.lastName }}</ion-card-subtitle>
+      <ion-card-subtitle>Pregunta Secreta: {{ user?.secretQuestion }}</ion-card-subtitle>
+
+      <ion-item>
+        <ion-label position="floating">Respuesta</ion-label>
+        <ion-input [(ngModel)]="respuesta" placeholder="Escribe tu respuesta"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" (click)="validarRespuestaSecreta()">
+        Verificar Respuesta
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
