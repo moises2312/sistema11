@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-misdatos',
   templateUrl: './misdatos.component.html',
   styleUrls: ['./misdatos.component.scss'],
+  standalone: true,
 })
 export class MisdatosComponent  implements OnInit {
 
