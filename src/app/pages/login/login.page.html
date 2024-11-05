@@ -1,40 +1,39 @@
 <ion-header>
   <ion-toolbar class="transparent-bg">
+    <!-- Selección de idioma en el lado izquierdo -->
     <div slot="start" class="ion-margin">
       <app-language #selectLanguage></app-language>
     </div>
-    <div class="show-in-landscape">
-      <h1 class="glow-text"> {{ 'AppName' | translate }} </h1>
-    </div>
+
+    <!-- Botón de tema en el lado derecho -->
     <div slot="end" class="ion-margin">
-      <ion-button shape="round" size="small" (click)="navigateTheme()">
+      <ion-button class="white-theme-button" shape="round" size="small" (click)="navigateTheme()">
         Tema
         <ion-icon slot="start" name="color-wand-outline"></ion-icon>
       </ion-button>
     </div>
-   </ion-toolbar>
+  </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
 
+
+
+<ion-content [fullscreen]="true">
   <img class="background-image" src="/assets/images/pao.jpg">
-  
-  <h1 class="glow-text show-in-portrait margin-top-6"> {{ 'AppName' | translate }} </h1>
 
   <ion-card class="login-container transparent-input">
-
-    <ion-card-header class="show-in-portrait">
-      <ion-card-title color="light" class="glow-text">
-        <h4>
-          <b>
-            {{ 'Login.Title.Login' | translate }}
-          </b>
-        </h4>
-      </ion-card-title>
+    <ion-card-header>
+      <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 100%; max-width: 300px;">
+      <br><br>
+        <ion-toolbar>
+          <ion-label>Sistema de asistencia</ion-label>
+        </ion-toolbar>
     </ion-card-header>
 
     <ion-card-content class="transparent-input text-center">
       
+      <h1>Inicio Sesión</h1>
       <ion-item class="margin-bottom-6 float-left-landscape">
         <ion-input 
           label="{{ 'Login.Label.Email' | translate }}" 
@@ -49,29 +48,26 @@
           label="{{ 'Login.Label.Password' | translate }}"
           labelPlacement="floating"
           [(ngModel)]="password" 
-          placeholder="{{ 'Login.Placeholder.Password' | translate }}"
           type="password">
         </ion-input>
       </ion-item>
 
-      <div class="ion-text-center margin-top-6" style="clear: both;">
+      <div class="ingreso-1">
         <ion-button class="enter-button normal-text" shape="round" (click)="login()">
           {{ 'Login.Button.Login' | translate }}
         </ion-button>
       </div>
-
+      
     </ion-card-content>
-
-  </ion-card>
-
+  </ion-card> 
 </ion-content>
 
-<ion-footer>
-  <ion-button color="secondary" shape="block" (click)="navigateCorreo()">
+<ion-footer class="footer-links">
+  <a (click)="navigateCorreo()" class="footer-link">
     {{ 'Login.Button.ForgotPassword' | translate }}
-  </ion-button>
-
-  <ion-button color="secondary" shape="block" (click)="navigateMap()">
+  </a>
+  
+  <a (click)="navigateMap()" class="footer-link">
     Ruta a DUOC
-  </ion-button>
+  </a>
 </ion-footer>

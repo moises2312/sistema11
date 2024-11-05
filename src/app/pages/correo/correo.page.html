@@ -1,13 +1,21 @@
 <ion-content [fullscreen]="true" class="ion-padding card-background">
-  <div class="center-container">
-    <ion-card class="ion-text-center card">
-      <ion-card-header>
-        <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo">
-      </ion-card-header>
+  <img class="background-image" src="/assets/images/Denisse.jpg">
+  <ion-card-header class="centered-content">
+    <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 100%; max-width: 300px;">
+  </ion-card-header>
 
+  <div class="center-container">
+    <ion-toolbar class="centered-toolbar">
+      <ion-label class="titu">Asistencia de Duoc</ion-label>
+      <br>
+    </ion-toolbar>
+    <br><br><br><br>
+    
+
+    <ion-card class="ion-text-center card">
+      <h1>Recuperar Contraseña</h1>
       <ion-card-content>
-        <ion-title>Recuperar Contraseña</ion-title>
-        <p>Ingresa tu correo electrónico para continuar.</p>
+        
 
         <ion-item>
           <ion-label position="floating">Correo</ion-label>
@@ -18,8 +26,8 @@
             labelPlacement="floating">
           </ion-input>
         </ion-item>
-
-        <ion-button expand="block" size="large" (click)="verificarCorreo()">
+        <br><br>
+        <ion-button expand="block" size="large" (click)="validateSecretQuestion()">
           <ion-icon name="checkmark"></ion-icon>
           Verificar
         </ion-button>

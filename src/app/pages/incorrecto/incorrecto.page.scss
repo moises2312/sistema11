@@ -1,0 +1,81 @@
+/* Fondo que cubre toda la pantalla */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Cubre toda la altura de la pantalla */
+  padding: 20px;
+  background-image: url('../../../assets/images/compu.jpg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo para la tarjeta principal */
+.card-background {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(153, 151, 151, 0.829); /* Sombra para destacar la tarjeta */
+  text-align: center;
+}
+
+/* Centra y ajusta el logo */
+img {
+  width: 80%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Estilo del texto de los títulos */
+ion-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000; /* Color del texto */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilo para el texto de advertencia "Intenta nuevamente" */
+.incorrecto h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000; /* Color rojo para indicar error */
+  margin: 0;
+}
+
+/* Estilo para el botón */
+ion-button {
+  --background: #031a30; /* Fondo oscuro */
+  color: #ffffff; /* Texto en blanco */
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+ion-card {
+  background-color: rgba(230, 223, 223, 0.9); /* Fondo semi-transparente */
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+  width: 90%; /* Ajuste para pantallas móviles */
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar la tarjeta */
+}
+/* Hover en el botón */
+ion-button:hover {
+  --background: #ffffff; /* Cambia el fondo a blanco al hacer hover */
+  color: #031a30; /* Cambia el texto a oscuro */
+  border: 1px solid #031a30; /* Borde oscuro al hacer hover */
+}

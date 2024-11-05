@@ -1,17 +1,32 @@
+
+
+
 <ion-content class="ion-padding">
-  <ion-card *ngIf="user">
+  
+  
+  
+  <ion-card class="ion-text-center card-background">
+    <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 100%; max-width: 200px;">
     <ion-card-header>
-      <ion-toolbar>
-        <ion-title>Asistencia de Duoc</ion-title>
-      </ion-toolbar>
+      
+    
+        <ion-toolbar>
+          <ion-label>Asistencia de Duoc</ion-label>
+        </ion-toolbar>
+        <br>
     </ion-card-header>
 
+    <ion-card *ngIf="user">
+
+      
+
     <ion-card-content>
-      <ion-card-subtitle>Usuario: {{ user?.firstName }} {{ user?.lastName }}</ion-card-subtitle>
-      <ion-card-subtitle>Pregunta Secreta: {{ user?.secretQuestion }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ user?.firstName }} {{ user?.lastName }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ user?.secretQuestion }}</ion-card-subtitle>
 
       <ion-item>
         <ion-label position="floating">Respuesta</ion-label>
+        <br>
         <ion-input [(ngModel)]="respuesta" placeholder="Escribe tu respuesta"></ion-input>
       </ion-item>
 
@@ -19,5 +34,6 @@
         Verificar Respuesta
       </ion-button>
     </ion-card-content>
+  </ion-card>
   </ion-card>
 </ion-content>

@@ -251,14 +251,27 @@ export class DatabaseService {
 
   async findUserByEmail(email: string): Promise<User | undefined> {
     try {
-      const q = 'SELECT * FROM USER WHERE email=?;';
-      const rows = (await this.db.query(q, [email])).values;
-      return rows? this.rowToUser(rows[0]) : undefined;
+      const query = 'SELECT * FROM USER WHERE email = ?';
+      const result = await this.db.query(query, [email]);
+  
+      // Agregar log para verificar el contenido de result.values
+      console.log('Resultado de la consulta:', result);
+  
+      const rows = result.values || [];  // Acceso directo a values
+  
+      if (rows.length > 0) {
+        console.log('Usuario encontrado:', rows[0]);
+        return this.rowToUser(rows[0]);
+      }
+      
+      console.log('No se encontró usuario con el correo:', email);
+      return undefined;
     } catch (error) {
-      showAlertError('DataBaseService.findUserByEmail', error);
+      showAlertError('DatabaseService.findUserByEmail', error);
       return undefined;
     }
   }
+  
 
   private rowToUser(row: any): User {
     try {
