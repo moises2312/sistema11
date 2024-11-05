@@ -19,6 +19,6 @@ export class IncorrectoPage implements OnInit {
   ngOnInit() {}
 
   navegarAIngreso() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/login']);
   }
 }
