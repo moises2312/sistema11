@@ -8,7 +8,7 @@
     <!-- Botón de tema en el lado derecho -->
     <div slot="end" class="ion-margin">
       <ion-button class="white-theme-button" shape="round" size="small" (click)="navigateTheme()">
-        Tema
+        {{ 'ThemePage.Label.ColorTheme' | translate }}
         <ion-icon slot="start" name="color-wand-outline"></ion-icon>
       </ion-button>
     </div>
@@ -27,13 +27,16 @@
       <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 100%; max-width: 300px;">
       <br><br>
         <ion-toolbar>
-          <ion-label>Sistema de asistencia</ion-label>
+          <ion-toolbar>
+            <ion-label> {{ 'AppName' | translate }}
+            </ion-label>
+          </ion-toolbar>
         </ion-toolbar>
     </ion-card-header>
 
     <ion-card-content class="transparent-input text-center">
       
-      <h1>Inicio Sesión</h1>
+      <h1>{{ 'Login.Title.Login' | translate }}</h1>
       <ion-item class="margin-bottom-6 float-left-landscape">
         <ion-input 
           label="{{ 'Login.Label.Email' | translate }}" 
@@ -68,6 +71,8 @@
   </a>
   
   <a (click)="navigateMap()" class="footer-link">
-    Ruta a DUOC
+    {{ 'login.button.ruta' | translate }}
   </a>
 </ion-footer>
+
+

@@ -1,5 +1,5 @@
 {
-    "AppName": "Angry-Dinosaurs",
+    "AppName": "Küme Elikantu Mogen DUOC",
     "AuthorText": "Rakinon tamiñ:",
     "Author": "Moises Sanchez y Denisse Coilla",
     "Language": "Dugün",
@@ -18,6 +18,7 @@
     "Login.Button.Signin": "Trawünme",
     "Login.Button.ForgotPassword": "Ñi rakinmapu elañmafi",
     "Login.Button.DarkMode": "Pewma külen müleyin",
+    "login.button.ruta": "Rupu DUOC mew",
 
     "WelcomePage.Title.Wellcome": "¡Tüfachi mülenmi Angry-Dinosaurs!",
 
@@ -26,7 +27,7 @@
     "HomePage.Button.Dinosaur": "Tüfachi Chod",
     "HomePage.Button.Forum": "Trapu",
 
-    "ThemePage.Label.ColorTheme": "Dugün de kolor:",
+    "ThemePage.Label.ColorTheme": "Dugün:",
     "ThemePage.Color.Light": "Külfün",
     "ThemePage.Color.Dark": "Pewma",
     "ThemePage.Color.Green": "Karü",

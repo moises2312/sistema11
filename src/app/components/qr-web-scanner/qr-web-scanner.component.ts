@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { EventEmitter } from '@angular/core';
 import jsQR, { QRCode } from 'jsqr';
+import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-qrwebscanner',
@@ -21,9 +23,15 @@ export class QrWebScannerComponent implements OnDestroy {
 
   qrData: string = '';
   mediaStream: MediaStream | null = null; // Almacena el flujo de medios
-
-  constructor() 
+  user: User = new User();
+  constructor(private auth: AuthService) 
   { 
+    this.auth.authUser.subscribe((user) => {
+      console.log(user);
+      if (user) {
+        this.user = user;
+      }
+    });
     this.startQrScanningForWeb();
   }
 

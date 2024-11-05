@@ -1,5 +1,5 @@
 {
-    "AppName": "Sistema asistencia DUOC",
+    "AppName": "Sistema de asistencia DUOC",
     "AuthorText": "Desarrollado por:",
     "Author": "Cristián Gómez Vega",
     "Language": "Idioma",
@@ -18,6 +18,7 @@
     "Login.Button.Signin": "Registrarse",
     "Login.Button.ForgotPassword": "Recuperar contraseña",
     "Login.Button.DarkMode": "Oscuro",
+    "login.button.ruta": "Ruta a DUOC",
 
     "WelcomePage.Title.Wellcome": "¡Bienvenido al Sistema de asistencia DUOC!",
 
@@ -26,7 +27,7 @@
     "HomePage.Button.Dinosaur": "Mi clase",
     "HomePage.Button.Forum": "Foro",
 
-    "ThemePage.Label.ColorTheme": "Tema de color:",
+    "ThemePage.Label.ColorTheme": "Tema:",
     "ThemePage.Color.Light": "Claro",
     "ThemePage.Color.Dark": "Oscuro",
     "ThemePage.Color.Green": "Verde",
