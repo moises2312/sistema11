@@ -74,17 +74,17 @@ export class CorreoPage implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.animateTitle();
+    //this.animateTitle();
   }
 
-  private animateTitle() {
-    this.animationController
-      .create()
-      .addElement(this.itemTitulo.nativeElement)
-      .iterations(Infinity)
-      .duration(9000)
-      .fromTo('transform', 'translateX(-50%)', 'translateX(100%)')
-      .fromTo('opacity', 0.5, 1)
-      .play();
-  }
+  // private animateTitle() {
+  //   this.animationController
+  //     .create()
+  //     .addElement(this.itemTitulo.nativeElement)
+  //     .iterations(Infinity)
+  //     .duration(9000)
+  //     .fromTo('transform', 'translateX(-50%)', 'translateX(100%)')
+  //     .fromTo('opacity', 0.5, 1)c
+  //     .play();
+  // }
 }

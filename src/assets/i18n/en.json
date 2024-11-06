@@ -20,12 +20,13 @@
     "Login.Button.DarkMode": "Dark Mode",
     "login.button.ruta": "Route to DUOC",
 
-    "WelcomePage.Title.Wellcome": "Welcome to Angry-Dinosaurs!",
+    "WelcomePage.Title.Wellcome": "Welcome",
 
-    "HomePage.Button.Wellcome": "QR",
+    "HomePage.Button.Wellcome": "Home",
     "HomePage.Button.Scan": "Scan",
-    "HomePage.Button.Dinosaur": "Dinosaur",
+    "HomePage.Button.Dinosaur": "My class",
     "HomePage.Button.Forum": "Forum",
+    "HomePage.Button.Misdatos": "My data",
 
     "ThemePage.Label.ColorTheme": "Theme:",
     "ThemePage.Color.Light": "Light",
@@ -64,5 +65,6 @@
     "ThemePage.Form.DescriptionLabel": "Description",
     "ThemePage.Form.DescriptionPlaceholder": "Write a description here...",
     "ThemePage.Form.ToggleLabel": "Enable notifications",
-    "ThemePage.Form.CheckboxLabel": "I accept the terms"
+    "ThemePage.Form.CheckboxLabel": "I accept the terms",
+    "head.asis":"Assitence"
 }

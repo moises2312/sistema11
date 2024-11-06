@@ -1,0 +1,10 @@
+.ion-text-center h1:first-child {
+  font-size: 35px; /* Tamaño más pequeño para "Bienvenido(a)" */
+  margin: 0; /* Elimina el margen superior/inferior */
+}
+
+.ion-text-center h1:last-child {
+  font-size: 35px; /* Tamaño más pequeño para el nombre */
+  color: #FFC72C; /* Color amarillo oscuro para el nombre */
+  margin: 0; /* Elimina el margen superior/inferior */
+}

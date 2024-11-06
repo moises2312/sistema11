@@ -19,13 +19,15 @@
     "Login.Button.ForgotPassword": "Recuperar contraseña",
     "Login.Button.DarkMode": "Oscuro",
     "login.button.ruta": "Ruta a DUOC",
+    
 
-    "WelcomePage.Title.Wellcome": "¡Bienvenido al Sistema de asistencia DUOC!",
+    "WelcomePage.Title.Wellcome": "Bienvenido",
 
-    "HomePage.Button.Wellcome": "QR",
+    "HomePage.Button.Wellcome": "Inicio",
     "HomePage.Button.Scan": "Escanear",
     "HomePage.Button.Dinosaur": "Mi clase",
     "HomePage.Button.Forum": "Foro",
+    "HomePage.Button.Misdatos": "Mis datos",
 
     "ThemePage.Label.ColorTheme": "Tema:",
     "ThemePage.Color.Light": "Claro",
@@ -64,5 +66,7 @@
     "ThemePage.Form.DescriptionLabel": "Descripción",
     "ThemePage.Form.DescriptionPlaceholder": "Escribe aquí una descripción...",
     "ThemePage.Form.ToggleLabel": "Activar notificaciones",
-    "ThemePage.Form.CheckboxLabel": "Acepto los términos"
+    "ThemePage.Form.CheckboxLabel": "Acepto los términos",
+
+    "head.asis":"Asistencia"
 }

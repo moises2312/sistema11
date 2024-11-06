@@ -20,12 +20,13 @@
     "Login.Button.DarkMode": "Pewma külen müleyin",
     "login.button.ruta": "Rupu DUOC mew",
 
-    "WelcomePage.Title.Wellcome": "¡Tüfachi mülenmi Angry-Dinosaurs!",
+    "WelcomePage.Title.Wellcome": "Trawünnnieymun",
 
-    "HomePage.Button.Wellcome": "QR",
+    "HomePage.Button.Wellcome": "Tripantu",
     "HomePage.Button.Scan": "Wütran",
-    "HomePage.Button.Dinosaur": "Tüfachi Chod",
+    "HomePage.Button.Dinosaur": "Ñi Yall",
     "HomePage.Button.Forum": "Trapu",
+    "HomePage.Button.Misdatos": "Ñi dungu",
 
     "ThemePage.Label.ColorTheme": "Dugün:",
     "ThemePage.Color.Light": "Külfün",
@@ -64,5 +65,6 @@
     "ThemePage.Form.DescriptionLabel": "Püllün",
     "ThemePage.Form.DescriptionPlaceholder": "Eymi mülen ta püllün...",
     "ThemePage.Form.ToggleLabel": "Külfünon notificaciones",
-    "ThemePage.Form.CheckboxLabel": "Amun nien küme alka müleyfi"
+    "ThemePage.Form.CheckboxLabel": "Amun nien küme alka müleyfi",
+    "head.asis":"Trawun"
 }
