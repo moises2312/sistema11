@@ -1,10 +1,10 @@
 .video {
   border-radius: 15px;
-  border: 3px solid gray;
+  border: 3px solid rgba(129, 129, 129, 0.932);
   overflow: auto; /* Permite scroll si el contenido es demasiado grande */
   box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-  max-width: 95vh;
-  max-height: 95vh;
+  max-width: 50vh;
+  max-height: 50vh;
 }
 
 .frame {
@@ -14,7 +14,7 @@
   padding: 20px;
 
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); 
 }
@@ -26,7 +26,7 @@
   left: 50%;
   width: 100%; /* Ajusta el tamaño inicial del cuadrado */
   height: 100%;
-  border: 30px solid rgba(255, 255, 255, 0.8);
+  border: 20px solid rgba(105, 105, 105, 0.932);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%);
   animation: pulse 1.5s infinite ease-in-out;
@@ -76,7 +76,8 @@
 }
 
 .video-container {
-  --background: #323232; /* Fondo gris */
+  --background: #ffffffc5; /* Fondo gris */
   height: 100%;
   width: 100%;
 }
+

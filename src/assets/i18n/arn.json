@@ -9,6 +9,8 @@
     
     "Start.StartNewExperience": "Eymi müley kiñe küpan trawün",
 
+    "Bienvenido":"Küme tüfachi müley tañi",
+    "ForumPage": "Manjares de küpal",
     "Login.Title.Login": "Wüñolün",
     "Login.Label.VolverIniciar": "küpa",
     "Login.Label.Contraseña": "¡Küme pewkantu! Tami rakizuam pichi mülechi:",
@@ -80,6 +82,13 @@
     "CorreoPage.Button.Recuperar": "Inan rakizuam",
     "CorreoPage.Incorrecto": "Machiwe müten",
     "CorreoPage.Intenta": "Ramtuan nieymi",
+    "CorrectoPage.Recuperado": "Weñumafey ñi llavefün",
+    
+    "misDatos":"rakiduam",
+    "Titulo": "Weñefe",
+    "Limpiar": "Ñamülün",
+    "Publicaciones": "Pewün tugültun",
+    "Publi": "Tugültun",
 
     "PreguntaPage.Titulo": "Epu Ülkantun: Peye tami küyen pewma"
 }

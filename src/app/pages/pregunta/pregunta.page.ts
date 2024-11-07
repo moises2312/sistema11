@@ -38,8 +38,9 @@ export class PreguntaPage implements OnInit {
   }
 
 
-  salirAlogin() {
-    this.router.navigate(['/login']);
+  async salirAlogin() {
+    this.authService.deleteAuthUser();
+     await this.router.navigate(['/login']);
   }
 
   public async validarRespuestaSecreta(): Promise<void> {

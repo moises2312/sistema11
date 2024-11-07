@@ -31,7 +31,8 @@ export class CorrectoPage implements OnInit {
     });
   }
 
-  salirAlogin() {
+  async salirAlogin() {
+    await this.authService.deleteAuthUser();
     this.router.navigate(['/login']); // Usa this.router.navigate para navegar
   }
 }

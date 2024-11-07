@@ -1,12 +1,12 @@
-<ion-header>
-  <ion-toolbar class="transparent-bg">
+<ion-header color="primary">
+  <ion-toolbar color="primary">
   <!-- Título centrado con tamaño ajustado -->
   <ion-title class="tit"> {{ 'AppName' | translate }} </ion-title>
   
   
   <!-- Botón de logout en el lado derecho -->
   <ion-buttons slot="end" class="logout-button-container">
-    <ion-button shape="round" size="small" class="logout-button" (click)="salirAlogin()">
+    <ion-button shape="round" size="small" color="" (click)="salirAlogin()">
       <ion-icon slot="start" name="log-out-outline" size="small"></ion-icon>
       {{ 'ThemePage.Button.Logout' | translate }}
     </ion-button>
@@ -24,7 +24,7 @@
 
 
 <ion-footer>
-  <ion-toolbar class="ion-text-center" color="tertiary">
+  <ion-toolbar class="ion-text-center" color="primary">
     <ion-button shape="round" color="secondary" size="small"
         (click)="goToDUOC()" >
       DUOC

@@ -9,7 +9,11 @@
     
     "Start.StartNewExperience": "Comienza una nueva experiencia",
 
+
+    "Bienvenido":"Bienvenido(a)",
+    "ForumPage": "Gestión de Publicaciones",
     "Login.Title.Login": "Iniciar sesión",
+    "misDatos":"Guardar",
     "Login.Label.VolverIniciar": "Volver",
     "Login.Label.Contraseña": "¡Felicidades! Tu contraseña es: ",
     "Login.Label.Email": "Correo",
@@ -80,6 +84,11 @@
     "CorreoPage.Button.Recuperar": "Recuperar contraseña",
     "CorreoPage.Incorrecto": "Correo Incorrecto",
     "CorreoPage.Intenta": "Intenta nuevamente",
+    "CorrectoPage.Recuperado": "Contraseña Recuperada",
 
-    "PreguntaPage.Titulo": "Paso 2: Responde la pregunta secreta"
+    "PreguntaPage.Titulo": "Paso 2: Responde la pregunta secreta",
+    "Titulo": "Título",
+    "Limpiar": "Limpiar",
+    "Publicaciones": "Publicaciones Recientes",
+    "Publi": "Publicación"
 }

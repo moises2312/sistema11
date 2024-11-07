@@ -9,6 +9,8 @@
     
     "Start.StartNewExperience": "Start a new experience",
 
+    "Bienvenido":"Welcome",
+    "ForumPage": "Publications Management",
     "Login.Title.Login": "Login",
     "Login.Label.VolverIniciar": "Return",
     "Login.Label.Contraseña": "¡Congratulations! Your password is:",
@@ -80,6 +82,12 @@
     "CorreoPage.Button.Recuperar": "Recover password",
     "CorreoPage.Incorrecto": "Incorrect Email",
     "CorreoPage.Intenta": "Try again",
+    "CorrectoPage.Recuperado": "Password Recovered",
+    "misDatos":"Save",
+    "Titulo": "Title",
+    "Limpiar": "Clean",
+    "Publicaciones": "Recent Publicationss",
+    "Publi": "Publication",
     
 
     "PreguntaPage.Titulo": "Step 2: Answer the secret question"

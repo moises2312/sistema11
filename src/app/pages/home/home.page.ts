@@ -13,6 +13,7 @@ import { Capacitor } from '@capacitor/core';
 import { ScannerService } from 'src/app/services/scanner.service';
 import { WelcomeComponent } from 'src/app/components/welcome/welcome.component';
 import { ForumComponent } from 'src/app/components/forum/forum.component';
+import { MisdatosComponent } from 'src/app/components/misdatos/misdatos.component';
 
 
 @Component({
@@ -24,7 +25,7 @@ import { ForumComponent } from 'src/app/components/forum/forum.component';
       CommonModule, FormsModule, TranslateModule, IonContent
     , HeaderComponent, FooterComponent
     , WelcomeComponent, QrWebScannerComponent, DinosaurComponent
-    , ForumComponent
+    , ForumComponent, MisdatosComponent
   ]
 })
 export class HomePage {

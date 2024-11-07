@@ -32,7 +32,8 @@ export class HeaderComponent {
     this.headerClick.emit(buttonName);
   }
 
-  logout() {
+  async logout() {
+    await this.authService.deleteAuthUser();
     this.authService.logout();
   }
 

@@ -1,54 +1,53 @@
-<ion-content>
+<ion-content class="center">
 
   <div class="background-image" *ngIf="dino"></div>
 
   <ion-grid fixed *ngIf="dino" class="dino-content">
     <ion-row>
-      <ion-col size="5">Sede</ion-col>
-      <ion-col size="7">{{ dino.sede }}</ion-col>
+      <ion-col size="5" class="label-column">Sede</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.sede }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">ID Asignatura</ion-col>
-      <ion-col size="7">{{ dino.idAsignatura }}</ion-col>
+      <ion-col size="5" class="label-column">ID Asignatura</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.idAsignatura }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Sección</ion-col>
-      <ion-col size="7">{{ dino.seccion }}</ion-col>
+      <ion-col size="5" class="label-column">Sección</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.seccion }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Nombre Asignatura</ion-col>
-      <ion-col size="7">{{ dino.nombreAsignatura }}</ion-col>
+      <ion-col size="5" class="label-column">Nombre Asignatura</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.nombreAsignatura }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Nombre Profesor</ion-col>
-      <ion-col size="7">{{ dino.nombreProfesor }}</ion-col>
+      <ion-col size="5" class="label-column">Nombre Profesor</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.nombreProfesor }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Día</ion-col>
-      <ion-col size="7">{{ dino.dia }}</ion-col>
+      <ion-col size="5" class="label-column">Día</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.dia }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Bloque de Inicio</ion-col>
-      <ion-col size="7">{{ dino.bloqueInicio }}</ion-col>
+      <ion-col size="5" class="label-column">Bloque de Inicio</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.bloqueInicio }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Bloque de Término</ion-col>
-      <ion-col size="7">{{ dino.bloqueTermino }}</ion-col>
+      <ion-col size="5" class="label-column">Bloque de Término</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.bloqueTermino }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Hora de Inicio</ion-col>
-      <ion-col size="7">{{ dino.horaInicio }}</ion-col>
+      <ion-col size="5" class="label-column">Hora de Inicio</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.horaInicio }}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="5">Hora de Fin</ion-col>
-      <ion-col size="7">{{ dino.horaFin }}</ion-col>
+      <ion-col size="5" class="label-column">Hora de Fin</ion-col>
+      <ion-col size="7" class="data-column">{{ dino.horaFin }}</ion-col>
     </ion-row>
-    
   </ion-grid>
 
   <div *ngIf="!dino" class="center-frame">
-    <div class="picture-frame ion-text-center">
-      <img class="you-must-scan" src="/assets/images/escaneo.png">
+    <div>
+      <img src="/assets/images/escaneo.png" width="250px">
     </div>
   </div>
 

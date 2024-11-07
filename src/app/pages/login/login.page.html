@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-toolbar class="transparent-bg">
+<ion-header color="primary">
+  <ion-toolbar color="primary" class="transparent-bg">
     <!-- Selección de idioma en el lado izquierdo -->
     <div slot="start" class="ion-margin">
       <app-language #selectLanguage></app-language>
@@ -7,7 +7,7 @@
 
     <!-- Botón de tema en el lado derecho -->
     <div slot="end" class="ion-margin">
-      <ion-button class="white-theme-button" shape="round" size="small" (click)="navigateTheme()">
+      <ion-button color="primary" class="white-theme-button" shape="round" size="small" (click)="navigateTheme()">
         {{ 'ThemePage.Label.Theme' | translate }}
         <ion-icon slot="start" name="color-wand-outline"></ion-icon>
       </ion-button>
@@ -26,8 +26,8 @@
     <ion-card-header>
       <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 100%; max-width: 300px;">
       <br><br>
-        <ion-toolbar>
-          <ion-label class="ing">{{ 'AppName' | translate }}</ion-label>
+        <ion-toolbar color="primary">
+          <ion-label  class="ing">{{ 'AppName' | translate }}</ion-label>
         </ion-toolbar>
     </ion-card-header>
 
@@ -54,7 +54,7 @@
       </ion-item>
 
       <div class="ingreso-1">
-        <ion-button class="enter-button normal-text" shape="round" (click)="login()">
+        <ion-button color="primary" class="enter-button normal-text" shape="round" (click)="login()">
           {{ 'Login.Button.Login' | translate }}
           <ion-icon slot="start" name="finger-print-outline"></ion-icon>
         </ion-button>

@@ -1,8 +1,12 @@
-<app-header 
+<app-header color="primary"
   (headerClick)="headerClick($event)">
 </app-header>
+<br>
+
 
 <ion-content [fullscreen]="true">
+  <app-welcome>
+  </app-welcome>
 
   <app-qrwebscanner 
     *ngIf="selectedComponent === 'qrwebscanner'" 
@@ -21,6 +25,11 @@
   <app-forum 
     *ngIf="selectedComponent === 'forum'">
   </app-forum>
+  <app-misdatos
+  *ngIf="selectedComponent === 'misdatos'">
+  </app-misdatos>
+
+
 
 </ion-content>
 
