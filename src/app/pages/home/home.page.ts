@@ -14,6 +14,7 @@ import { ScannerService } from 'src/app/services/scanner.service';
 import { WelcomeComponent } from 'src/app/components/welcome/welcome.component';
 import { ForumComponent } from 'src/app/components/forum/forum.component';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',

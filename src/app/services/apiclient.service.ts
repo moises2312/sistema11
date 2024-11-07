@@ -14,13 +14,12 @@ export class APIClientService {
 
   httpOptions = {
     headers: new HttpHeaders({
-      'content-type': 'application/json',
-      'access-control-allow-origin': '*'
+      'content-type': 'application/json'
     })
   };
 
   //apiUrl = 'http://localhost:3000';
-  apiUrl = 'http://192.168.1.125:3005';
+  apiUrl = 'http://192.168.0.111:3005';
 
 private intervalId: any;
 

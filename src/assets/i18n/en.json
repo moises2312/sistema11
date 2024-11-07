@@ -1,5 +1,5 @@
 {
-    "AppName": "Angry-Dinosaurs",
+    "AppName": "Duoc assistance",
     "AuthorText": "Developed by:",
     "Author": "Moisés Sanchéz y Denisse Coilla",
     "Language": "Language",
@@ -10,7 +10,11 @@
     "Start.StartNewExperience": "Start a new experience",
 
     "Login.Title.Login": "Login",
+    "Login.Label.VolverIniciar": "Return",
+    "Login.Label.Contraseña": "¡Congratulations! Your password is:",
     "Login.Label.Email": "Email",
+    "Login.Label.Respuesta": "Read Answer",
+    "Login.Label.Ruta": "¿Are you late? Calculate your trip to Duoc",
     "Login.Placeholder.Email": "Enter your email here",
     "Login.Label.Password": "Password",
     "Login.Placeholder.Password": "Enter your password here",
@@ -18,14 +22,20 @@
     "Login.Button.Signin": "Sign Up",
     "Login.Button.ForgotPassword": "Forgot my password",
     "Login.Button.DarkMode": "Dark Mode",
+    "Login.Button.Ruta": "Route to Duoc UC",
+    "Login.Button.RutaF": "Route",
+    "Footer.Here": "Here",
 
-    "WelcomePage.Title.Wellcome": "Welcome to Angry-Dinosaurs!",
+
+    "WelcomePage.Title.Wellcome": "Welcome to the DUOC Support System!",
 
     "HomePage.Button.Wellcome": "QR",
     "HomePage.Button.Scan": "Scan",
-    "HomePage.Button.Dinosaur": "Dinosaur",
+    "HomePage.Button.Dinosaur": "My class",
     "HomePage.Button.Forum": "Forum",
+    "HomePage.Button.Data": "My data",
 
+    "ThemePage.Label.Theme": "Theme",
     "ThemePage.Label.ColorTheme": "Color Theme:",
     "ThemePage.Color.Light": "Light",
     "ThemePage.Color.Dark": "Dark",
@@ -63,5 +73,14 @@
     "ThemePage.Form.DescriptionLabel": "Description",
     "ThemePage.Form.DescriptionPlaceholder": "Write a description here...",
     "ThemePage.Form.ToggleLabel": "Enable notifications",
-    "ThemePage.Form.CheckboxLabel": "I accept the terms"
+    "ThemePage.Form.CheckboxLabel": "I accept the terms",
+
+    "CorreoPage.Button.Verificar": "Verify",
+    "CorreoPage.Button.VerificarCorreo": "Step 1: Enter your email",
+    "CorreoPage.Button.Recuperar": "Recover password",
+    "CorreoPage.Incorrecto": "Incorrect Email",
+    "CorreoPage.Intenta": "Try again",
+    
+
+    "PreguntaPage.Titulo": "Step 2: Answer the secret question"
 }

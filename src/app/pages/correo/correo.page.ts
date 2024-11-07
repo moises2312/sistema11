@@ -3,16 +3,19 @@ import { Router } from '@angular/router';
 import { AlertController, AnimationController, IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DatabaseService } from 'src/app/services/database.service';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth.service'; 
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { checkboxOutline, colorWandOutline, fingerPrintOutline, logOutOutline } from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-correo',
   templateUrl: './correo.page.html',
   styleUrls: ['./correo.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule],
+  imports: [IonicModule, CommonModule, FormsModule, TranslateModule ],
   animations: [
     trigger('fadeInAnimation', [
       state('void', style({ opacity: 0 })),
@@ -23,7 +26,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class CorreoPage implements OnInit, AfterViewInit {
+export class CorreoPage implements OnInit {
   @ViewChild('titulo', { read: ElementRef }) itemTitulo!: ElementRef;
 
   public correo: string = '';
@@ -35,13 +38,15 @@ export class CorreoPage implements OnInit, AfterViewInit {
   private databaseService = inject(DatabaseService);
   private authService = inject(AuthService); 
 
-  constructor() {}
+  constructor() {
+    addIcons({ checkboxOutline, logOutOutline })
+  }
 
   ngOnInit() {}
 
   public async validateSecretQuestion(): Promise<void> {
     if (!this.correo) {
-      await this.showAlert('Campo vacío', 'Por favor ingresa un correo.');
+      this.showAlert('Campo vacío', 'Por favor ingresa un correo.');
       return;
     }
 
@@ -51,16 +56,16 @@ export class CorreoPage implements OnInit, AfterViewInit {
 
       if (foundUser) {
         // Guardar el usuario autenticado en el AuthService
-        await this.authService.saveAuthUser(foundUser);
+        this.authService.saveAuthUser(foundUser);
 
         // Redirigir a la página de pregunta
-        await this.router.navigate(['/pregunta']);
+        this.router.navigate(['/pregunta']);
       } else {
-        await this.showAlert('Correo no encontrado', 'El correo ingresado no existe en el sistema.');
+        this.router.navigate(['/incorrecto']);
       }
     } catch (error) {
       console.error('Error al verificar el correo:', error);
-      await this.showAlert('Error del Sistema', 'Ocurrió un error al buscar el usuario. Intenta nuevamente más tarde.');
+      this.showAlert('Error del Sistema', 'Ocurrió un error al buscar el usuario. Intenta nuevamente más tarde.');
     }
   }
 
@@ -70,11 +75,13 @@ export class CorreoPage implements OnInit, AfterViewInit {
       message,
       buttons: ['Aceptar']
     });
-    await alert.present();
+    alert.present();
   }
 
-  ngAfterViewInit() {
-    this.animateTitle();
+  ngAfterViewInit() {}
+
+  salirAlogin() {
+    this.router.navigate(['/login']);
   }
 
   private animateTitle() {

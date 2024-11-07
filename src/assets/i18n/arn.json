@@ -1,5 +1,5 @@
 {
-    "AppName": "Angry-Dinosaurs",
+    "AppName": "Küme ayüwün Duoc mew",
     "AuthorText": "Rakinon tamiñ:",
     "Author": "Moises Sanchez y Denisse Coilla",
     "Language": "Dugün",
@@ -10,7 +10,11 @@
     "Start.StartNewExperience": "Eymi müley kiñe küpan trawün",
 
     "Login.Title.Login": "Wüñolün",
+    "Login.Label.VolverIniciar": "küpa",
+    "Login.Label.Contraseña": "¡Küme pewkantu! Tami rakizuam pichi mülechi:",
     "Login.Label.Email": "E-mail",
+    "Login.Label.Respuesta": "Mulpën",
+    "Login.Label.Ruta": "¿Amulmawimi? Külpay tami rüpü tüfachi Duoc mew",
     "Login.Placeholder.Email": "Eymi mülen teu e-mail",
     "Login.Label.Password": "Rakinmapu",
     "Login.Placeholder.Password": "Eymi mülen teu rakinmapu",
@@ -18,6 +22,10 @@
     "Login.Button.Signin": "Trawünme",
     "Login.Button.ForgotPassword": "Ñi rakinmapu elañmafi",
     "Login.Button.DarkMode": "Pewma külen müleyin",
+    "Login.Button.Ruta": "Rakin mu Duoc mew",
+    "Login.Button.RutaF": "Rakin",
+    "Footer.Here": "Tüfa",
+   
 
     "WelcomePage.Title.Wellcome": "¡Tüfachi mülenmi Angry-Dinosaurs!",
 
@@ -25,7 +33,9 @@
     "HomePage.Button.Scan": "Wütran",
     "HomePage.Button.Dinosaur": "Tüfachi Chod",
     "HomePage.Button.Forum": "Trapu",
+    "HomePage.Button.Data": "Iñche mew",
 
+    "ThemePage.Label.Theme": "Dugün",
     "ThemePage.Label.ColorTheme": "Dugün de kolor:",
     "ThemePage.Color.Light": "Külfün",
     "ThemePage.Color.Dark": "Pewma",
@@ -63,5 +73,13 @@
     "ThemePage.Form.DescriptionLabel": "Püllün",
     "ThemePage.Form.DescriptionPlaceholder": "Eymi mülen ta püllün...",
     "ThemePage.Form.ToggleLabel": "Külfünon notificaciones",
-    "ThemePage.Form.CheckboxLabel": "Amun nien küme alka müleyfi"
+    "ThemePage.Form.CheckboxLabel": "Amun nien küme alka müleyfi",
+
+    "CorreoPage.Button.Verificar": "Chequeañ",
+    "CorreoPage.Button.VerificarCorreo": "Kiñe Ülkantun: Eymi machiwe wejpin",
+    "CorreoPage.Button.Recuperar": "Inan rakizuam",
+    "CorreoPage.Incorrecto": "Machiwe müten",
+    "CorreoPage.Intenta": "Ramtuan nieymi",
+
+    "PreguntaPage.Titulo": "Epu Ülkantun: Peye tami küyen pewma"
 }

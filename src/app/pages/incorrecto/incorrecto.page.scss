@@ -1,81 +1,107 @@
-/* Fondo que cubre toda la pantalla */
+
+
+/* Contenedor centrado para todo el contenido */
 .center-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh; /* Cubre toda la altura de la pantalla */
-  padding: 20px;
-  background-image: url('../../../assets/images/compu.jpg'); /* Imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Estilo para la tarjeta principal */
-.card-background {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-  border-radius: 15px;
-  padding: 20px;
-  max-width: 400px;
+  justify-content: center;
   width: 100%;
-  box-shadow: 0px 4px 8px rgba(153, 151, 151, 0.829); /* Sombra para destacar la tarjeta */
-  text-align: center;
 }
 
-/* Centra y ajusta el logo */
-img {
+
+
+/* Logo centrado */
+.logo {
   width: 80%;
   max-width: 150px;
   margin: 0 auto;
   display: block;
 }
 
-/* Estilo del texto de los títulos */
-ion-card-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000000; /* Color del texto */
-  margin-top: 10px;
+
+
+/* Estilo de la tarjeta centrada */
+.card {
+  background-color: rgba(255, 255, 255, 0.719); /* Fondo semi-transparente */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para el texto de advertencia "Intenta nuevamente" */
-.incorrecto h1 {
+/* Título y texto en negro */
+.ini {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.incorrecto {
+  color: black;
+  text-align: center;
   font-size: 20px;
-  font-weight: bold;
-  color: #000000; /* Color rojo para indicar error */
-  margin: 0;
+  font-weight: bolder;
 }
 
-/* Estilo para el botón */
+
+.transparent-bg {
+  font-size: 15px;
+  --background: #031a30;     
+  border-radius: 10px; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.tit {
+  font-weight: bold;       /* Texto en negrita */
+  font-size: 16px;         /* Tamaño de fuente más pequeño */
+  text-align: center;      /* Alineación centrada */
+}
+
+
+
+
+
+
+.titu{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+
+
+
+.enter-button {
+  font-size: 15px;            /* Ajusta el tamaño de texto del botón */
+  padding: 12px 24px;         /* Añade padding para que el botón sea más grande */
+  --background: #031a30; /* Color inicial */
+  --color: #ffffff; /* Color de texto */
+  --background-activated: #7a76a3; /* Fondo blanco al presionar */
+}
+
+
+
+ion-card-title{
+  color: #000000;
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+/* Botón con estilo azul */
 ion-button {
-  --background: #031a30; /* Fondo oscuro */
-  color: #ffffff; /* Texto en blanco */
-  font-size: 16px;
-  padding: 10px;
+  --background: #031a30;  /* Azul estándar */
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 20px;
   border-radius: 8px;
   font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-
-ion-card {
-  background-color: rgba(230, 223, 223, 0.9); /* Fondo semi-transparente */
-  border-radius: 15px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 15px;
-  width: 90%; /* Ajuste para pantallas móviles */
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar la tarjeta */
-}
-/* Hover en el botón */
-ion-button:hover {
-  --background: #ffffff; /* Cambia el fondo a blanco al hacer hover */
-  color: #031a30; /* Cambia el texto a oscuro */
-  border: 1px solid #031a30; /* Borde oscuro al hacer hover */
 }

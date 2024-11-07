@@ -1,4 +1,5 @@
 <ion-content>
+  <img class="background-image" src="/assets/images/m.jpg">
   <a id="topOfPage" href="#topOfPage"></a>
   <!-- Formulario para crear/editar publicaciones -->
   <ion-card>
@@ -6,41 +7,43 @@
       <ion-card-title>Gestión de Publicaciones</ion-card-title>
       <ion-card-subtitle>{{ selectedPostText }}</ion-card-subtitle>
     </ion-card-header>
+  </ion-card>
 
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating" color="secondary">Título</ion-label>
-        <ion-input [(ngModel)]="post.title" placeholder="Ingresa el título de la publicación"></ion-input>
-      </ion-item>
+        <ion-label class="tres" position="stacked" color="primary">Título</ion-label>
+        <ion-input [(ngModel)]="post.title" placeholder="Ingresa el título"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="floating" color="secondary">Descripción</ion-label>
-        <ion-textarea [(ngModel)]="post.body" placeholder="Escribe el contenido de la publicación"></ion-textarea>
-      </ion-item>
-
-      <div class="ion-text-center margin-top-6">
-        <ion-button color="medium" shape="round" (click)="cleanPost()">Limpiar</ion-button>
-        <ion-button color="primary" shape="round" (click)="savePost()">
-          {{ post.id ? 'Actualizar' : 'Guardar' }}
-        </ion-button>
-      </div>
+        <ion-item>
+          <ion-label class="tres" position="stacked" color="primary">Descripción</ion-label>
+           <ion-textarea [(ngModel)]="post.body" placeholder="Escribe el contenido"></ion-textarea>
+        </ion-item>
+        
+    
       
     </ion-card-content>
-  </ion-card>
+    
+  
 
-  <!-- Lista de publicaciones recientes -->
-  <ion-card class="sin-bordes">
-    <ion-card-title class="con-padding-top">Publicaciones Recientes</ion-card-title>
-  </ion-card>
+  <div class="ion-text-center margin-top-6">
+    <ion-button class="enter-button" color="medium" shape="round" (click)="cleanPost()">Limpiar</ion-button>
+    <ion-button class="enter-button" color="primary" shape="round" (click)="savePost()">
+      {{ post.id ? 'Actualizar' : 'Guardar' }}
+    </ion-button>
+  </div>
+
+
 
   <ion-list>
+    <ion-card-title class="con-padding-top" color="primary">Publicaciones Recientes</ion-card-title>
     <ion-card *ngFor="let post of posts; trackBy: getPostId">
       <ion-card-header>
         <h6>(Publicación #{{ post.id }}) {{ post.author }}</h6>
         <h4>{{ post.title }}</h4>
       </ion-card-header>
   
-      <ion-card-content>
+      <ion-card-content class="dos">
         <p>{{ post.body }}</p>
       </ion-card-content>
   

@@ -6,7 +6,7 @@ import { ViewWillEnter } from '@ionic/angular';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageComponent } from 'src/app/components/language/language.component';
 import { Router } from '@angular/router';
-import { colorWandOutline } from 'ionicons/icons';
+import { colorWandOutline, fingerPrintOutline } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
 import { AuthService } from 'src/app/services/auth.service';
 
@@ -49,8 +49,9 @@ export class LoginPage implements ViewWillEnter {
   { 
     this.correo = 'atorres';
     this.password = '1234';
+    addIcons({ colorWandOutline, fingerPrintOutline})
     // Los iconos deben ser agregados a uno (ver en https://ionic.io/ionicons)
-    addIcons({ colorWandOutline }); 
+    ; 
   }
 
   async ionViewWillEnter() {
@@ -65,13 +66,6 @@ export class LoginPage implements ViewWillEnter {
     this.authService.login(this.correo, this.password);
   }
 
-  registerNewUser() {
-
-  }
-
-  passwordRecovery() {
-    
-  }
 
   navigateMap() {
     this.router.navigate(['/map']);

@@ -1,0 +1,22 @@
+h3.tit {
+  font-weight: bold;       /* Texto en negrita */
+  font-size: 10px;         /* Tamaño de fuente más pequeño */
+  text-align: left;
+}
+
+
+ion-button {
+  --background: #000f3a; /* Color de fondo normal */
+  --color: #ffffff; /* Color de texto normal */
+
+  &:hover {
+    --background: #f7f9ff; /* Color de fondo al pasar el cursor (por ejemplo, azul) */
+    --color: #7277b9; /* Color de texto al pasar el cursor (blanco) */
+  }
+}
+
+.align-right {
+  margin-left: auto !important; /* Empuja el botón hacia el margen derecho */
+  display: flex;
+  justify-content: flex-end;
+}

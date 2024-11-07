@@ -1,5 +1,5 @@
 {
-    "AppName": "Sistema asistencia DUOC",
+    "AppName": "Asistencia DUOC",
     "AuthorText": "Desarrollado por:",
     "Author": "Cristián Gómez Vega",
     "Language": "Idioma",
@@ -10,7 +10,11 @@
     "Start.StartNewExperience": "Comienza una nueva experiencia",
 
     "Login.Title.Login": "Iniciar sesión",
+    "Login.Label.VolverIniciar": "Volver",
+    "Login.Label.Contraseña": "¡Felicidades! Tu contraseña es: ",
     "Login.Label.Email": "Correo",
+    "Login.Label.Respuesta": "Escribe tu respuesta",
+    "Login.Label.Ruta": "¿Vas atrasado? Calcula tu ruta a Duoc",
     "Login.Placeholder.Email": "Ingresa aquí tu correo",
     "Login.Label.Password": "Contraseña",
     "Login.Placeholder.Password": "Ingresa aquí tu contraseña",
@@ -18,6 +22,10 @@
     "Login.Button.Signin": "Registrarse",
     "Login.Button.ForgotPassword": "Recuperar contraseña",
     "Login.Button.DarkMode": "Oscuro",
+    "Login.Button.Ruta": "Ruta a Duoc UC",
+    "Login.Button.RutaF": "Ruta",
+    "Footer.Here": "Aquí",
+
 
     "WelcomePage.Title.Wellcome": "¡Bienvenido al Sistema de asistencia DUOC!",
 
@@ -25,7 +33,9 @@
     "HomePage.Button.Scan": "Escanear",
     "HomePage.Button.Dinosaur": "Mi clase",
     "HomePage.Button.Forum": "Foro",
+    "HomePage.Button.Data": "Mis datos",
 
+    "ThemePage.Label.Theme": "Tema",
     "ThemePage.Label.ColorTheme": "Tema de color:",
     "ThemePage.Color.Light": "Claro",
     "ThemePage.Color.Dark": "Oscuro",
@@ -63,5 +73,13 @@
     "ThemePage.Form.DescriptionLabel": "Descripción",
     "ThemePage.Form.DescriptionPlaceholder": "Escribe aquí una descripción...",
     "ThemePage.Form.ToggleLabel": "Activar notificaciones",
-    "ThemePage.Form.CheckboxLabel": "Acepto los términos"
+    "ThemePage.Form.CheckboxLabel": "Acepto los términos",
+
+    "CorreoPage.Button.Verificar": "Verificar",
+    "CorreoPage.Button.VerificarCorreo": "Paso 1: Ingresa tu correo",
+    "CorreoPage.Button.Recuperar": "Recuperar contraseña",
+    "CorreoPage.Incorrecto": "Correo Incorrecto",
+    "CorreoPage.Intenta": "Intenta nuevamente",
+
+    "PreguntaPage.Titulo": "Paso 2: Responde la pregunta secreta"
 }

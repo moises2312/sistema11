@@ -1,14 +1,30 @@
-<app-header></app-header>
+<ion-header>
+  <ion-toolbar class="transparent-bg">
+  <!-- Título centrado con tamaño ajustado -->
+  <ion-title class="tit"> {{ 'AppName' | translate }} </ion-title>
+  
+  
+  <!-- Botón de logout en el lado derecho -->
+  <ion-buttons slot="end" class="logout-button-container">
+    <ion-button shape="round" size="small" class="logout-button" (click)="salirAlogin()">
+      <ion-icon slot="start" name="log-out-outline" size="small"></ion-icon>
+      {{ 'ThemePage.Button.Logout' | translate }}
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="mapa">
+  <img src="../../../assets/images/Duoc.png" alt="Logo Duoc UC" class="logo" style="width: 90%; max-width: 300px;">
+  <p>{{ 'Login.Label.Ruta' | translate }}</p>
 
   <!-- El div con id "mapId" será donde se mostrará el mapa -->
-  <div id="mapId" style="height: 100%;"></div>
-
+  <div id="mapId" style="height: 85%;"></div>
 </ion-content>
 
+
 <ion-footer>
-  <ion-toolbar class="ion-text-center" color="primary">
+  <ion-toolbar class="ion-text-center" color="tertiary">
     <ion-button shape="round" color="secondary" size="small"
         (click)="goToDUOC()" >
       DUOC
@@ -16,12 +32,12 @@
 
     <ion-button shape="round" color="secondary" size="small"
         (click)="goToMyPosition()">
-      Aquí
+      {{ 'Footer.Here' | translate }}
     </ion-button>
 
     <ion-button shape="round" color="secondary" size="small"
         (click)="showRouteToDuoc()">
-      Ruta
+      {{ 'Login.Button.RutaF' | translate }}
     </ion-button>
 
     <div *ngIf="distance">

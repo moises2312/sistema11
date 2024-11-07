@@ -9,6 +9,8 @@ import { GeoService } from 'src/app/services/geo.service';
 import * as L from 'leaflet'; // Importamos Leaflet
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { checkboxOutline, logOutOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-map',
@@ -34,12 +36,14 @@ export class MapPage implements OnInit {
     private geo: GeoService, 
     private http: HttpClient,
   private router: Router) { 
+    addIcons({ checkboxOutline, logOutOutline });
 
   }
 
   ngOnInit() {
     this.loadMap();
     this.fixLeafletIconPath();
+
   }
 
   async loadMap() {
@@ -85,6 +89,9 @@ export class MapPage implements OnInit {
       const marker = L.marker([lat, lng]).addTo(this.map);
       marker.bindPopup(popupText).openPopup();
     }
+  }
+  salirAlogin() {
+    this.router.navigate(['/login']);
   }
 
   async getMyAddress(lat: number, lng: number) {

@@ -1,27 +1,24 @@
 <ion-header>
   <ion-toolbar color="primary">
-
-    <ion-title>
-      <h3 class="glow-text margin-top-6"> {{ 'AppName' | translate }} </h3>
+    
+    <!-- Título alineado a la izquierda -->
+    <ion-title slot="start">
+      <h3 class="tit"> {{ 'AppName' | translate }} </h3>
     </ion-title>
+    
 
-    <div slot="end">
-
-      <!--<ion-button (click)="sendClickEvent('testqr')" size="small" >
+    <!-- Botones alineados a la derecha -->
+    <ion-buttons slot="end">
+      <ion-button (click)="sendClickEvent('scan')" size="small">
         <ion-icon name="qr-code-outline" color="light"></ion-icon>
-        &nbsp;Test
-      </ion-button> -->
-
-
-      <ion-button (click)="sendClickEvent('scan')" size="small" >
-        <ion-icon name="qr-code-outline" color="light"></ion-icon>
-        &nbsp;Asistencia
+        &nbsp;
       </ion-button>
-
+      
       <ion-button (click)="logout()" size="small" fill="clear">
         <ion-icon name="log-out-outline" color="light"></ion-icon>
+        {{ 'ThemePage.Button.Logout' | translate }}
       </ion-button>
+    </ion-buttons>
 
-    </div>
   </ion-toolbar>
 </ion-header>
