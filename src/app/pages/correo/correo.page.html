@@ -24,7 +24,7 @@
     <ion-toolbar color="primary">
       <h1 class="ing">{{ 'CorreoPage.Button.VerificarCorreo' | translate}}</h1>
     </ion-toolbar>
-    <br>
+    <br><br>
     
     <ion-card class="ion-text-center card">
       <ion-card-content>
@@ -33,7 +33,7 @@
           <ion-input type="email" [(ngModel)]="correo" placeholder="ma.gomez@duocuc.cl"></ion-input>
         </ion-item>
         
-        <br><br>
+        <br>
         <ion-button color="primary" class="enter-button" expand="block" size="large" (click)="validateSecretQuestion()">
           {{ 'CorreoPage.Button.Recuperar' | translate }}
           <ion-icon name="checkbox-outline"></ion-icon>

@@ -81,6 +81,7 @@ export class CorreoPage implements OnInit {
   ngAfterViewInit() {}
 
   salirAlogin() {
+    this.authService.deleteAuthUser();
     this.router.navigate(['/login']);
   }
 

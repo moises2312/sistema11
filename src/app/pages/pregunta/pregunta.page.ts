@@ -38,16 +38,18 @@ export class PreguntaPage implements OnInit {
   }
 
 
-  async salirAlogin() {
+  salirAlogin() {
     this.authService.deleteAuthUser();
-     await this.router.navigate(['/login']);
+    this.router.navigate(['/login']);
   }
 
   public async validarRespuestaSecreta(): Promise<void> {
     if (this.user && this.user.secretAnswer.toLowerCase() === this.respuesta.toLowerCase()) {
       this.router.navigate(['/correcto']);
     } else {
+      this.authService.deleteAuthUser();
       this.router.navigate(['/incorrecto']);
+      
     }
   }
 

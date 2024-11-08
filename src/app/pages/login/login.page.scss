@@ -40,8 +40,7 @@ ion-card-header {
 }
 
 ion-toolbar {
-  font-size: 15px;
-  --background: #031a30;     
+  font-size: 15px;  
   border-radius: 10px; 
   height: 20px; 
   display: flex; 
@@ -51,8 +50,7 @@ ion-toolbar {
 
 .transparent-bg {
   font-size: 20px;
-  
-  --background: #031a30;     
+      
   border-radius: 10px; 
   height: 40px; 
   display: flex; 
@@ -80,8 +78,7 @@ ion-button.white-theme-button {
 
 
 ion-button {
-  color: #ffffff; 
-  --background: #031a30;     
+  color: #ffffff;  
   font-size: 14px;
   padding: 1px 110px; 
   border-radius: 20px; 
@@ -158,6 +155,6 @@ ion-label a:hover {
   font-size: 15px;            /* Ajusta el tamaño de texto del botón */
   padding: 12px 24px;         /* Añade padding para que el botón sea más grande */
   --color: #ffffff; /* Color de texto */
-  --background-activated: #1b1481c0; /* Fondo blanco al presionar */
+
 }
 
